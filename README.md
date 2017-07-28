@@ -1,21 +1,11 @@
-## compression
+# Notes
 
+Tips and tricks for command line tools and programming languages
 
-## cvxopt
-
-
-## docker
-
-
-## git
-
-
-## pip
-
-
-## tmux
-
-
-## vim
-
-
+* [compression](compression.md)
+* [cvxopt](cvxopt.md)
+* [docker](docker.md)
+* [git](git.md)
+* [pip](pip.md)
+* [tmux](tmux.md)
+* [vim](vim.md)
