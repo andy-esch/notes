@@ -50,3 +50,46 @@ They are created by typing `q` in normal mode, then a letter identifier in a-z, 
 qdoi"""<Esc>kbywj""pi"""<Esc>q
 
 This creates a macro stored in d (triggered by typing `@d` in normal mode), that, starting at a `def func_name`, creates a line below the function, enters three quotes, goes up a line to yank the function name, goes down one line, pastes the function name, enters three more quotes, then exits the macro.
+
+## Spelling
+
+The following highlights 'misspellings':
+```
+:setlocal spell
+```
+
+Ref: https://robots.thoughtbot.com/vim-spell-checking
+
+
+## Changing commit messages
+
+### if NOT pushed
+
+```bash
+$ git commit --amend
+```
+
+
+### if pushed
+
+```bash
+$ git rebase -i hash^
+```
+
+Then change the appropriate commit to `reword` then save quit, then amend the message. Finally,
+
+```bash
+$ git push origin --force
+```
+
+Reference: <https://superuser.com/a/751909>
+
+## Committing hunks
+
+Add only some hunks of a file with the `-p` flag on `git add`:
+
+```bash
+$ git add -p filename
+```
+
+Ref: <https://stackoverflow.com/questions/1981830/undo-part-of-unstaged-changes-in-git>
