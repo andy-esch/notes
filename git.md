@@ -56,3 +56,43 @@ $ git push origin <branch_name> -f
 
 `ORIG_HEAD` stores the last commit messages, which can be overwritten after
 hitting enter for that command. The `-f` flag forces the push to the branch.
+
+## Changing commit messages
+
+### if NOT pushed
+
+```bash
+$ git commit --amend
+```
+
+
+### if pushed
+
+```bash
+$ git rebase -i hash^
+```
+
+Then change the appropriate commit to `reword` then save quit, then amend the message. Finally,
+
+```bash
+$ git push origin --force
+```
+
+Reference: <https://superuser.com/a/751909>
+
+## Committing hunks
+
+Add only some hunks of a file with the `-p` flag on `git add`:
+
+```bash
+$ git add -p filename
+```
+
+Ref: <https://stackoverflow.com/questions/1981830/undo-part-of-unstaged-changes-in-git>
+
+
+## Rename branch
+
+```bash
+$ git branch -m new-name
+```
