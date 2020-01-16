@@ -1,8 +1,18 @@
 # Vim Tips & Tricks
 
+## TOC
+
 * [Tabs](#Tabs)
 * [Splits](#Splits)
-* [Jedi Vim](#Jedi_Vim)
+* [Jedi Vim](#jedi-vim)
+
+**Other things**
+
+* `vimrc`: My [`.vimrc`](https://github.com/andy-esch/dotfiles/blob/master/vimrc)
+* `tmux`: I mostly use vim in multiple tmux windows, so I have the [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) plugin in my vimrc
+* `powerline`: I also like [`powerline-status`](https://github.com/powerline/powerline) for vim, commandline, and tmux
+* `psf/black`: I write a lot of Python in vim, so I use [psf/black](https://github.com/psf/black)
+
 
 ## Multiple Files in the Same Buffer
 
@@ -126,6 +136,8 @@ This tip is pretty awesome. From <http://pascalprecht.github.io/2014/07/10/prett
 :%!python -m json.tool
 ```
 
+Note: The `%` means the command (`!python ...`) is applied to the whole document
+
 ## Redraw screen
 
 Redraw/refresh screen if another process leaves artifacts:
@@ -153,3 +165,5 @@ documented object that the cursor is over.
 ```vim
 <Shift>+K
 ```
+
+[Jedi Vim repo]()
