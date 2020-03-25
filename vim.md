@@ -128,6 +128,16 @@ The following highlights 'misspellings':
 
 Ref: https://robots.thoughtbot.com/vim-spell-checking
 
+## Stop highlighting search
+
+Typing
+
+```vim
+:nohl
+```
+
+stops the highlighting of words from searches from `/searchterm`
+
 ## Prettify JSON
 
 This tip is pretty awesome. From <http://pascalprecht.github.io/2014/07/10/pretty-print-json-in-vim/>
@@ -145,6 +155,23 @@ Redraw/refresh screen if another process leaves artifacts:
 ```vim
 :redraw!
 ```
+
+If the syntax highlighting goes all wrong, this trick works to correct it:
+
+```vim
+:e
+```
+
+`e` is short for `edit`
+
+## Search
+
+### Search for other instances of word under cursor
+
+While in normal mode, press `*` (`SHIFT+*`).
+
+It is possible to select what is under a visual selection:
+  https://vim.fandom.com/wiki/Search_for_visually_selected_text
 
 ## Show current working directory
 
