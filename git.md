@@ -96,3 +96,13 @@ Ref: <https://stackoverflow.com/questions/1981830/undo-part-of-unstaged-changes-
 ```bash
 $ git branch -m new-name
 ```
+
+
+## LFS workflow
+
+The file needs to be tracked by lfs. The gotcha is that the `.gitattributes` file and
+the file being put in lfs needs to be added normally after the first lfs tracking step.
+
+1. `$ git lfs track <filename>`
+2. `$ git add .gitattributes`
+3. `$ git add <filename>`
