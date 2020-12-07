@@ -162,7 +162,7 @@ If the syntax highlighting goes all wrong, this trick works to correct it:
 :e
 ```
 
-`e` is short for `edit`
+`e` is short for `edit`. This is also great for loading changes to a file that happened outside the current session.
 
 ## Search
 
@@ -194,3 +194,10 @@ documented object that the cursor is over.
 ```
 
 [Jedi Vim repo]()
+
+
+## Reload vimrc
+
+```vim
+:source ~/.vimrc
+```

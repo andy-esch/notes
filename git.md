@@ -43,7 +43,7 @@ $ git ls-files examples/*.ipynb
 ## Remove file from commit
 
 If a file has been commited erroneously, you can remove it from that commit with
-the following steps.  It assumes the last commit was the one to be edited. I
+the following steps. It assumes the last commit was the one to be edited. I
 believe that this could be done for 
 
 ```bash
