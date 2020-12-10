@@ -1,5 +1,10 @@
 # tmux
 
+## Resources
+
+* [tmux cheatsheet](https://gist.github.com/andreyvit/2921703)
+
+## Command Interfaces
 
 * Command prompt: `^b :`
 * Scroll within a pane: `^b [` — and then j/k for going up/down.
