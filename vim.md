@@ -40,7 +40,7 @@ Or use an explicit list.
 
 ### Add New Tab when Already in Vim
 
-```
+```vim
 :tabnew filename
 ```
 
@@ -86,12 +86,12 @@ In normal mode, H, M, and L move the cursor to the Top (Highest), Middle, or Bot
 Increase/decrease vertical height of current split
 
 Increase current split by five lines
-```
+```vim
 :res +5
 ```
 
 Decrease the current splity by 10 lines
-```
+```vim
 :res -10
 ```
 
@@ -99,7 +99,7 @@ More on resizing here: <http://vim.wikia.com/wiki/Resize_splits_more_quickly>
 
 ### Size all splits equally (only vertical?)
 
-```
+```vim
 CTRL+w =
 ```
 
@@ -112,7 +112,7 @@ E.g., if a docstring needs to be added to all functions in a file
 They are created by typing `q` in normal mode, then a letter identifier in a-z, followed by the series of vim keystrokes, and finally hitting `q` again.
 
 
-```
+```vim
 qdoi"""<Esc>kbywj""pi"""<Esc>q
 ```
 
@@ -122,7 +122,7 @@ This creates a macro stored in d (triggered by typing `@d` in normal mode), that
 
 The following highlights 'misspellings':
 
-```
+```vim
 :setlocal spell
 ```
 
@@ -132,7 +132,7 @@ Ref: https://robots.thoughtbot.com/vim-spell-checking
 
 Typing
 
-```
+```vim
 :nohl
 ```
 
@@ -142,7 +142,7 @@ stops the highlighting of words from searches from `/searchterm`
 
 This tip is pretty awesome. From <http://pascalprecht.github.io/2014/07/10/pretty-print-json-in-vim/>
 
-```
+```vim
 :%!python -m json.tool
 ```
 
@@ -152,17 +152,17 @@ Note: The `%` means the command (`!python ...`) is applied to the whole document
 
 Redraw/refresh screen if another process leaves artifacts:
 
-```
+```vim
 :redraw!
 ```
 
-If the syntax highlighting goes all wrong, this trick works to correct it:
+If the syntax highlighting goes all wrong, this trick works to correct it (it reloads the file):
 
-```
+```vim
 :e
 ```
 
-`e` is short for `edit`
+`e` is short for `edit`. This is also great for loading changes to a file that happened outside the current session.
 
 ## Search
 
@@ -241,6 +241,12 @@ Option 2 - Open file
 Pretty neat trick for appending the contents of one file into the currently open file.
 Similar to `file1 >> file2` in bash.
 
-```
+```vim
 :r /path/to/file
+```
+
+## Reload vimrc
+
+```vim
+:source ~/.vimrc
 ```
