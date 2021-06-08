@@ -273,10 +273,19 @@ If you get an error that says something like 'error loading csv at position 5432
 :goto 54321
 ```
 
-## Go to start of Python function (!)
+## Go to start of (next|previous) function (!)
 
 Amazing. <https://vimhelp.org/motion.txt.html#%5Bm>
 
+Go to beginning of next function _before_ cursor.
 ```vim
 [m
 ```
+
+Go to beginning of next function _after_ cursor.
+
+```vim
+]m
+```
+
+`[M` and `]M` do something too.
