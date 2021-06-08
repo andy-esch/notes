@@ -250,3 +250,33 @@ Similar to `file1 >> file2` in bash.
 ```vim
 :source ~/.vimrc
 ```
+
+## Navigation
+
+Jump to last/older position:
+
+```
+ctrl+o
+```
+
+Jump to previous/newer position:
+
+```
+ctrl+i
+```
+
+### Go to byte position in file
+
+If you get an error that says something like 'error loading csv at position 54321', use the folloing command to find that place in the file:
+
+```vim
+:goto 54321
+```
+
+## Go to start of Python function (!)
+
+Amazing. <https://vimhelp.org/motion.txt.html#%5Bm>
+
+```vim
+[m
+```

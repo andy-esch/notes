@@ -45,3 +45,13 @@ General format:
 You can move one cell at a time by not specifying a number after the direction indicator.
 ```
 ^b :resize-pane -D
+
+## Navigate to pane #
+
+Tmux supports navigating to a pane by typing the prefix (CTRL+b) and typing q. Then typing the number of the pane (which are displayed after typing CTRL+b q)
+
+This navigates to pane 1:
+
+```
+^b q 1
+```
