@@ -39,3 +39,13 @@ General format:
 ```
 ^b :resize-pane <direction_indicator> [num_cells]
 ```
+
+## Navigate to pane #
+
+Tmux supports navigating to a pane by typing the prefix (CTRL+b) and typing q. Then typing the number of the pane (which are displayed after typing CTRL+b q)
+
+This navigates to pane 1:
+
+```
+^b q 1
+```
