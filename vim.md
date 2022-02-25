@@ -182,6 +182,15 @@ It is possible to select what is under a visual selection:
 Ref: <https://unix.stackexchange.com/a/8240>
 
 
+## Editing
+
+### Change case of character under cursor
+
+Tilde: `~`
+
+Or, using a visual selection: select text, type `u` to make it all lower case and `U` to make it all upper case.
+
+
 ## Jedi Vim
 
 ### Show documentation
