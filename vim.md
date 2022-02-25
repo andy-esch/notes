@@ -222,6 +222,12 @@ For example:
 :!aws s3 cp localfile.py s3://bucket/path/
 ```
 
+Or, apply a command to everything in the buffer:
+
+```
+:%!python -m json.tool
+```
+
 
 ## Cut without copy
 
